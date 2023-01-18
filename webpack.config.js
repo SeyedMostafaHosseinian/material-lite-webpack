@@ -1,6 +1,6 @@
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
-// const ConyPlugin = require('copy-webpack-plugin')
+// const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
     mode: 'production',
     entry: {
@@ -43,7 +43,7 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.html'
         }),
-        // new ConyPlugin({
+        // new CopyPlugin({
         //     patterns: [{from: './src/assets', to: './assets'}]
         // })
     ],
